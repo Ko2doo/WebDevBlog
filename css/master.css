@@ -1,3 +1,4 @@
+/*core stylesheets*/
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ a{
 }
 li{
   list-style-type: none;
+  color: #999;
 }
 body{
   font-family: 'Open Sans', sans-serif;
@@ -16,6 +18,10 @@ header{
   background-color: #000;
   display: flex;
 }
+pre{
+  font-family: 'Open Sans', sans-serif;
+}
+/*header styles*/
 .header_logo{
   text-transform: uppercase;
   color: #fff;
@@ -43,20 +49,84 @@ nav{
   display: none;
 }
 
+main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .main_welcome{
+  background: #000;
+  text-align: center;
+  padding: 200px 0 410px 0;
+}
+main .main_welcome p{
+color: #999;
+font-style: 20px;
+}
+main .main_welcome h1{
+  color: #999;
+  font-style: 44px;
+}
+.mycompany{
+  color: #fcac45;
+}
+.wrapper{
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+main .main_about{
+  display: flex;
+  padding: 100px 0 100px 0;
+}
+.about_right{
+  margin-left: 175px;
+  width: 415px;
+  text-align: left;
+}
+.about_right h2{
+  display: inline-block;
+  border-bottom: 3px solid #fcac45;
+  padding-bottom: 20px;
+}
+.about_right p{
+  margin-top: 30px;
+-moz-hyphens: auto;
+-webkit-hyphens: auto;
+-ms-hyphens: auto;
+}
+.about_right ul{
+  margin-top: 50px;
+}
+.about_right li{
+  margin-bottom: 20px;
+}
+.about_left{
+  margin-left: 180px;
+}
+.aboutus{
+  display: inline;
+  color: #000;
+  font-weight: 900;
+}
 
 
-@media screen and (max-width: 1200px){
+
+
+
+
+@media screen and (max-width: 1200px){ /*page resizing querys*/
   nav{
     margin-left: 20%;
   }
 }
-@media screen and (max-width: 1105px){
+@media screen and (max-width: 1105px){ /*page resizing querys*/
   nav{
     margin-left: 10  %;
   }
 }
 
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1010px){ /*page resizing querys*/
   .topnav a{
     display: none;
   }
