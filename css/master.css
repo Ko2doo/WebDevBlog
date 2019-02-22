@@ -122,7 +122,7 @@ main .main_about{
 }
 @media screen and (max-width: 1105px){ /*page resizing querys*/
   nav{
-    margin-left: 10  %;
+    margin-left: 10%;
   }
 }
 
