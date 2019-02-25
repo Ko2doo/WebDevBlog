@@ -41,6 +41,8 @@ pre{
   display: -o-flex;
   display: flex;
   justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
 }
 /*header styles*/
 .header_logo p{
