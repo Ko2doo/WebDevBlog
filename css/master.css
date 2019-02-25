@@ -51,7 +51,7 @@ pre{
   cursor: pointer;
 }
 .header_logo span{
-  font-weight: 650;
+  font-weight: 750;
   margin-left: 2px;
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -80,6 +80,44 @@ pre{
 .navigation__links ul,li{
   display: inline-block;
 }
+
+/*********** бургер меню! ************/
+.navigation__links ul.menu{
+  display: none;
+}
+.navigation__links ul.menu.active{
+  display: block;
+}
+ul.menu.active {
+  background: #1f1e1e;
+  z-index: 555;
+  padding: 70px 8px 65px 8px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 250px;
+  max-width: 325px;
+  width: 100%;
+  margin-bottom: 0;
+}
+.menu.active li {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  padding: 15px 15px;
+  margin: 0;
+}
+/************************************************/
+
 .navigation__links li,a{
   position: relative;
   -webkit-transition: all 0.3s ease-out;
@@ -142,8 +180,6 @@ pre{
   font-weight: 545;
   color: #cbcbcb;
 }
-
-
 
 
 
