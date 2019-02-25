@@ -103,11 +103,50 @@ ul.menu.active {
   max-width: 325px;
   width: 100%;
   margin-bottom: 0;
+  animation: slide-burger-slide 1s;
 }
 .menu.active li {
   display: table;
   padding: 15px 15px;
   margin: 0;
+}
+
+@keyframes slide-burger-slide{
+  0%{
+    left: -200px;
+    max-width: 0px;
+    -webkit-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  35%{
+    left: 0;
+    max-width: 185px;
+    -webkit-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  45%{
+    left: 0;
+    max-width: 265px;
+    -webkit-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  45%{
+    left: 0;
+    max-width: 295px;
+    -webkit-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100%{
+    max-width: 325px;
+    left: 0px;
+    -webkit-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
 }
 /************************************************/
 
