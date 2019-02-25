@@ -9,47 +9,34 @@
   <title>Document</title>
 </head>
 <body>
-<header>
-  <div class="header_logo"><p>mycompany</p></div>
-  <nav> <!--navigation bar-->
-    <div class="topnav" id="myTopnav">
-      <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">SERVICES</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">TESTIMONIALS</a>
-      <a href="#">CONTACT</a>
-      <a href="#" class="icon" id="menu">&#9776;</a> <!--menu icon-->
-    </div>
-  </nav>
+<header class="header">
+  <div class="header-container">
+    <div class="header_logo"><p>my<span class="text-mark-orange">company</span></p></div>
+    <nav class="navigation__links">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">testimonials</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#" class="icon" id="menu">&#9776;</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main><!--main content-->
-  <div class="main_welcome">
-    <h1>WELCOME ON <span class="mycompany">MYCOMPANY</span></h1>
-    <p>We are a digital agency with years of experience and with extraordinary people</p>
-<div class="wrapper">
-  <div class="main_about">
-  <div class="about_left">
-    <img src="img/site.png" alt="mac">
-  </div>
-  <div class="about_right">
-    <h2 >SOME WORD <span class="aboutus">ABOUT US</span></h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus .</p>
-    <ul>
-      <li>Mission - We deliver uniqueness and quality</li>
-      <li>Skills - Delivering fast and excellent results</li>
-      <li>Clients - Satisfied clients thanks to our experience</li>
-    </ul>
+<main class="content">
+  <section class="welcome-slide">
+    <div class="headline-big">
+      <h1>welcome on <span class="text-mark-orange">my company</span></h1>
     </div>
-  </div>
-</div>
-
-
-
-
-  </div>
+    <div class="subtitle">
+      <p>We are a digital agency with years of experience and with extraordinary people</p>
+    </div>
+  </section>
 </main>
+
 
 <script src="js/script.js"></script>
 </body>
