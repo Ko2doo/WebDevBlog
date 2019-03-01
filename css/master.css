@@ -132,13 +132,22 @@ ul.menu.active {
   bottom: 0;
   left: 0;
   right: 0;
-  min-width: 250px;
-  max-width: 325px;
+  min-width: 165px;
+  max-width: 250px;
   width: 100%;
   margin-bottom: 0;
   animation: slide-burger-slide 1s;
 }
+ul.menu.close{
+  display: none;
+  animation: slide-burger-slide-out 1s;
+}
 .menu.active li {
+  display: table;
+  padding: 15px 15px;
+  margin: 0;
+}
+.menu.close li {
   display: table;
   padding: 15px 15px;
   margin: 0;
@@ -154,27 +163,27 @@ ul.menu.active {
   }
   35%{
     left: 0;
-    max-width: 185px;
+    max-width: 145px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   45%{
     left: 0;
-    max-width: 265px;
+    max-width: 165px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   45%{
     left: 0;
-    max-width: 295px;
+    max-width: 225px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   100%{
-    max-width: 325px;
+    max-width: 250px;
     left: 0px;
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
@@ -184,28 +193,28 @@ ul.menu.active {
 @keyframes slide-burger-slide-out{
   0%{
     left: 0;
-    max-width: 325px;
+    max-width: 250px;
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   35%{
     left: 0;
-    max-width: 295px;
+    max-width: 145px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   45%{
     left: 0;
-    max-width: 265px;
+    max-width: 165px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
   45%{
     left: 0;
-    max-width: 185px;
+    max-width: 225px;
     -webkit-animation-timing-function: ease-in-out;
     -o-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
