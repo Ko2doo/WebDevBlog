@@ -117,10 +117,12 @@ body{
 }
 
 /*********** бургер меню! ************/
-.navigation__links ul.menu{
+ .navigation__links ul.menu{
   display: none;
 }
-.navigation__links ul.menu.active{
+ .navigation__links ul.menu.active{
+  opacity: 12;
+  visibility: visible;
   display: block;
 }
 ul.menu.active {
@@ -139,7 +141,20 @@ ul.menu.active {
   animation: slide-burger-slide 1s;
 }
 ul.menu.close{
-  display: none;
+  background: #1f1e1e;
+  z-index: 555;
+  padding: 70px 8px 65px 8px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 165px;
+  max-width: 250px;
+  width: 100%;
+  margin-bottom: 0;
+  display: inherit;
+  opacity: 0;
   animation: slide-burger-slide-out 1s;
 }
 .menu.active li {
@@ -157,12 +172,14 @@ ul.menu.close{
   0%{
     left: -200px;
     max-width: 0px;
+    opacity: 0.2;
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
   35%{
     left: 0;
+    opacity: 0.4;
     max-width: 145px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
@@ -170,13 +187,15 @@ ul.menu.close{
   }
   45%{
     left: 0;
+    opacity: 0.6;
     max-width: 165px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  45%{
+  65%{
     left: 0;
+    opacity: 0.8;
     max-width: 225px;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
@@ -185,6 +204,7 @@ ul.menu.close{
   100%{
     max-width: 250px;
     left: 0px;
+    opacity: 12;
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -194,6 +214,7 @@ ul.menu.close{
   0%{
     left: 0;
     max-width: 250px;
+    opacity: 12;
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -201,6 +222,7 @@ ul.menu.close{
   35%{
     left: 0;
     max-width: 145px;
+    opacity: 0.8;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
@@ -208,13 +230,15 @@ ul.menu.close{
   45%{
     left: 0;
     max-width: 165px;
+    opacity: 0.6;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  45%{
+  65%{
     left: 0;
     max-width: 225px;
+    opacity: 0.4;
     -webkit-animation-timing-function: ease-in-out;
     -o-animation-timing-function: ease-in-out;
     animation-timing-function: ease-in-out;
@@ -222,6 +246,8 @@ ul.menu.close{
   100%{
     max-width: 0;
     left: -200px;
+    opacity: 0;
+    display: none;
     -webkit-animation-timing-function: ease-out;
     -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
