@@ -7,7 +7,7 @@ $(document).ready(function() {
 	});
 
 	$('.btn-close').click(function(e){
-		$('.menu').removeClass('active').addClass('close');
+		$('.menu.active').removeClass('active').addClass('close');
 
 			//Добавим удаление класса 'close' через определенное время,
 			//тем самым полностью скрыв объект т.к. класс '.menu' имеет свойство display:none;

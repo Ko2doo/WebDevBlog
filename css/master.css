@@ -121,7 +121,7 @@ body{
   display: none;
 }
  .navigation__links ul.menu.active{
-  opacity: 12;
+  opacity: 1;
   visibility: visible;
   display: block;
 }
@@ -132,8 +132,8 @@ ul.menu.active {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
+  left: 0;
   min-width: 165px;
   max-width: 250px;
   width: 100%;
@@ -147,8 +147,8 @@ ul.menu.close{
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
   right: 0;
+  left: 0;
   min-width: 165px;
   max-width: 250px;
   width: 100%;
@@ -177,34 +177,10 @@ ul.menu.close{
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  35%{
-    left: 0;
-    opacity: 0.4;
-    max-width: 145px;
-    -webkit-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  45%{
-    left: 0;
-    opacity: 0.6;
-    max-width: 165px;
-    -webkit-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  65%{
-    left: 0;
-    opacity: 0.8;
-    max-width: 225px;
-    -webkit-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
   100%{
     max-width: 250px;
     left: 0px;
-    opacity: 12;
+    opacity: 1;
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
@@ -218,30 +194,6 @@ ul.menu.close{
     -webkit-animation-timing-function: ease-in;
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
-  }
-  35%{
-    left: 0;
-    max-width: 145px;
-    opacity: 0.8;
-    -webkit-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  45%{
-    left: 0;
-    max-width: 165px;
-    opacity: 0.6;
-    -webkit-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-  65%{
-    left: 0;
-    max-width: 225px;
-    opacity: 0.4;
-    -webkit-animation-timing-function: ease-in-out;
-    -o-animation-timing-function: ease-in-out;
-    animation-timing-function: ease-in-out;
   }
   100%{
     max-width: 0;
