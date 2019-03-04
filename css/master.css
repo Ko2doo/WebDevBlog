@@ -175,8 +175,6 @@ button.btn-close{
   font-size: 22px;
   color: #fff;
 }
-button
-
 /* Hover effect's */
 .menu li,a{
   position: relative;
@@ -210,7 +208,9 @@ button
   bottom: 0;
   padding: 4px;
   height: 100%;
-  background: #352f35;
+  background: #0e0e0e;
+/*  -webkit-box-shadow: 8px 0 7px -8px #3F51B5;
+  box-shadow: 8px 0 7px -8px #3F51B5;*/
 }
 .btn-close .icon-close{
   opacity: 0.5;
